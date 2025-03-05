@@ -15,7 +15,17 @@ import {
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
-const _nav = [
+const _nav = [  
+  {
+  component: CNavItem,
+  name: 'Wallboard',
+  to: '/wallboard',
+  icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  badge: {
+    color: 'info',
+    text: 'NEW',
+  },
+  },
   {
     component: CNavItem,
     name: 'Dashboard',
